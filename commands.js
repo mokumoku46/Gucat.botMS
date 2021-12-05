@@ -70,5 +70,10 @@ module.exports = async (client, message, cmd, args) => {
     let amount = parseInt(args[0]);
     queue.setVolume(amount);
     message.channel.send(`ตั่งค่าเสียงไว้ที่ \`${amount}\``);
+  } else if (cmd === 'help') {
+    message.channel.send('สั่งการโดยใช้เครื่องหมาย --')
+    message.channel.send('มี play, stop, skip, loop');
+    
+    
   }
 };
